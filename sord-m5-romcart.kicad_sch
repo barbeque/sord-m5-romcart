@@ -2211,6 +2211,34 @@
 		(color 0 0 0 0)
 		(uuid "fc008c3e-bf1f-4c89-aa85-658a85776ad2")
 	)
+	(no_connect
+		(at 103.505 90.805)
+		(uuid "065c6525-9698-4a45-be79-01701f86b9bd")
+	)
+	(no_connect
+		(at 103.505 98.425)
+		(uuid "196cb228-423b-4f6b-b805-c7b5e56d1edc")
+	)
+	(no_connect
+		(at 103.505 88.265)
+		(uuid "9593018c-a102-467b-a18a-7a13c2eda4ff")
+	)
+	(no_connect
+		(at 103.505 85.725)
+		(uuid "99ce9046-1913-41dd-b231-016660a6587d")
+	)
+	(no_connect
+		(at 103.505 83.185)
+		(uuid "b540e484-d39f-46f0-8bb8-b4d73c1977cd")
+	)
+	(no_connect
+		(at 103.505 95.885)
+		(uuid "c1377853-db4d-4d7f-a1a9-3cff0d37ae64")
+	)
+	(no_connect
+		(at 103.505 93.345)
+		(uuid "fd4bee68-6358-4e18-a30d-afe8633132c7")
+	)
 	(wire
 		(pts
 			(xy 184.15 102.235) (xy 176.53 102.235)
@@ -2320,6 +2348,16 @@
 			(type default)
 		)
 		(uuid "1dce436d-c722-4abb-93de-0371558763b9")
+	)
+	(wire
+		(pts
+			(xy 103.505 70.485) (xy 107.95 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2080c2cc-6f10-49b9-9eb2-dd108d209823")
 	)
 	(wire
 		(pts
@@ -3134,6 +3172,16 @@
 		)
 		(uuid "d0998e11-6901-4961-a76e-3d0481b314f7")
 	)
+	(text "TODO: decode the ROM0/ROM1 selects into high address lines"
+		(exclude_from_sim no)
+		(at 140.335 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "da02b152-edf5-491d-b2f9-2f1fe822b90a")
+	)
 	(label "A2"
 		(at 71.755 90.805 180)
 		(fields_autoplaced yes)
@@ -3265,6 +3313,17 @@
 			(justify right bottom)
 		)
 		(uuid "3b0a09dc-bd0c-441a-86cc-e53006004ce2")
+	)
+	(label "~{ROM1}"
+		(at 107.95 70.485 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4135a920-38c4-4851-997c-6ad314ad02eb")
 	)
 	(label "D7"
 		(at 184.15 102.235 0)
