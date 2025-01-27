@@ -3073,21 +3073,23 @@
 	)
 	(text "0x2000 (A13)"
 		(exclude_from_sim no)
-		(at 122.555 67.31 0)
+		(at 116.205 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "260edff9-6fee-4ec9-bf03-518bd5567ad0")
 	)
-	(text "0x6000"
+	(text "0x6000 (A13 + A14, \"only 4k\")"
 		(exclude_from_sim no)
-		(at 119.38 72.39 0)
+		(at 116.205 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "279151ab-47c7-40c6-9db3-5e2d4344446a")
 	)
@@ -3101,13 +3103,14 @@
 		)
 		(uuid "4105b264-62da-4054-b736-ba5a478c091c")
 	)
-	(text "0x4000"
+	(text "0x4000 (A14)"
 		(exclude_from_sim no)
-		(at 119.38 69.85 0)
+		(at 116.205 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "87ae4e9d-e7ef-4d59-afcb-be8a20f14d8a")
 	)

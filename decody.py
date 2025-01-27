@@ -53,7 +53,23 @@ memory_map = [ # Sord M5, no expansion
 ]
 
 io_map = [
-    (0x00, 'Z80 CTC'),
+    (0x00, 'Z80 CTC, SIO int.'),
+    (0x01, 'Z80 CTC, peripheral timer'),
+    (0x02, 'Z80 CTC, SIO clock generator'),
+    (0x03, 'Z80 CTC, VDP blank interrupt'),
+    (0x11, 'TMS9928, VDP status/control/address'),
+    (0x10, 'TMS9928, VDP data'),
+    (0x20, 'SN76489 PSG control'),
+    (0x30, 'Keyboard, row 0'),
+    (0x31, 'Keyboard, row 1'),
+    (0x32, 'Keyboard, row 2'),
+    (0x33, 'Keyboard, row 3'),
+    (0x34, 'Keyboard, row 4'),
+    (0x35, 'Keyboard, row 5'),
+    (0x36, 'Keyboard, row 6'),
+    (0x37, 'Joystick'),
+    # $50 bit 7 is also reset/halt key data port
+    (0x50, 'Tape data, parallel control')
 ]
     
 print('Memory Map:')
