@@ -1,19 +1,25 @@
 def to_bin(h):
     return format(h, '016b')
 
-def walk_map(m):
-    address_width = 16 # 16-bit address bus size by default (Z80)
+def walk_map(m, is_io = False):
+    address_width = 16 if not is_io else 8 # 16-bit address bus size by default (Z80)
 
     max_address = max([offset for (offset, _) in m])
     if max_address >= 2 ** 16:
         address_width = 32 # 32-bit address bus size (68000)
         # TODO: I guess maybe we might one day have a 64-bit machine. That's not today, though
 
-    for (start_offset, identifier) in sorted(m, key=lambda p: p[0]):
+    sorted_mappings = sorted(m, key=lambda p: p[0])
+
+    i = 0
+
+    for (start_offset, identifier) in sorted_mappings:
         print(to_bin(start_offset) + ' ' + identifier)
 
         # identify set bits
         set_bits = []
+
+        saved_start_offset = start_offset
 
         address = 0
         while address < address_width:
@@ -25,6 +31,16 @@ def walk_map(m):
         formatted_addresses = map(lambda a: f'A{a}', set_bits)
         print(' bits set:', ', '.join(formatted_addresses))
 
+        # try to figure out the length of this segment
+        max_machine_address = 2 ** address_width
+        if i + 1 >= len(sorted_mappings): # last one has to take up the rest of memory
+            size_to_next = max_machine_address - saved_start_offset
+        else: # someone is above this one, calculate the distance
+            (next_offset, _) = sorted_mappings[i + 1]
+            size_to_next = next_offset - saved_start_offset
+        print(' length:', size_to_next)
+
+        i += 1
 
 
 memory_map = [ # Sord M5, no expansion
@@ -44,4 +60,4 @@ print('Memory Map:')
 walk_map(memory_map)
 
 print('I/O Map:')
-walk_map(io_map)
+walk_map(io_map, True)
