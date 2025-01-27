@@ -29,8 +29,9 @@ def walk_map(m):
 
 memory_map = [ # Sord M5, no expansion
     (0x0000, 'BIOS ROM'),
-    (0x2000, 'Cart ROM, page A (16k max)'),
-    (0x6000, 'Reserved area'),
+    (0x2000, 'Cart ROM, page A'),
+    (0x4000, 'Cart ROM, page B'),
+    (0x6000, 'Cart ROM, page C (reserved area?)'),
     (0x7000, 'Internal RAM (4k)'),
     (0x8000, 'External RAM on cartridge')
 ]
