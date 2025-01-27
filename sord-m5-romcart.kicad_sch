@@ -3288,6 +3288,17 @@
 		)
 		(uuid "66bd0c32-c459-4405-9781-166528b2a1d2")
 	)
+	(label "A12"
+		(at 146.685 114.935 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "68ab75e7-e3b9-421a-a1c9-97fb8f5fa7c5")
+	)
 	(label "A1"
 		(at 146.685 86.995 180)
 		(fields_autoplaced yes)
