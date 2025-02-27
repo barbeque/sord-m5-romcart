@@ -2202,6 +2202,16 @@
 		)
 		(uuid "4105b264-62da-4054-b736-ba5a478c091c")
 	)
+	(text "TODO: Fix symbol pinout to be A/B "
+		(exclude_from_sim no)
+		(at 76.835 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "852e6cb4-12aa-46ef-98aa-0a236d4558e9")
+	)
 	(text "0x4000 (A14)"
 		(exclude_from_sim no)
 		(at 116.205 69.85 0)
@@ -4252,7 +4262,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sord:M5_CartridgeSlot"
 			(at 93.345 37.465 0)
 			(effects
 				(font
@@ -4271,6 +4281,15 @@
 			)
 		)
 		(property "Description" "As per http://blog.livedoor.jp/hardyboy/archives/cat_242269.html"
+			(at 93.345 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" ""
 			(at 93.345 37.465 0)
 			(effects
 				(font
