@@ -130,6 +130,105 @@
 	(net 49 "/~{ROM_CS}")
 	(net 50 "unconnected-(U3-Pad11)")
 	(net 51 "Net-(U3-Pad3)")
+	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(locked yes)
+		(layer "F.Cu")
+		(uuid "bc9c79ec-8fb5-489c-80c1-e6d3b155f54a")
+		(at 196.088 138.938)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "REF**"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b11643d6-dd4a-494f-9577-9c5e407ff85c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "fffab47f-07f5-44d3-af50-3d4e27bc30e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "286d5e0a-dd02-4573-95c2-8bcaf3b4f7d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6c65320-1e12-426b-895c-a041d7d83438")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom dnp)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "cd365777-7a9e-4a29-81c3-0266d3057c7f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a48d39c2-9d6d-47f9-bdd1-bf7251dfeec4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9d5f1280-0c4b-4f75-a12e-538fa7dd0129")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "12c776dc-2d15-46c8-adc3-c892ec49fdac")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Sord:M5_CartridgeSlot"
 		(layer "F.Cu")
 		(uuid "d8ef9b36-4251-4a1a-a298-11d2ef10bc84")
@@ -829,6 +928,105 @@
 			(pintype "output+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "0f2717cf-4b3c-4b9b-94c0-1013983a4735")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(locked yes)
+		(layer "F.Cu")
+		(uuid "dc824914-6497-433b-9719-04e8681adff6")
+		(at 104.14 139.192)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "REF**"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eeb6b28e-cb5c-4cfb-ac05-560b1dae6cba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "429dc6f3-6fbd-4ac4-b010-9dc77a744a22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c22db49-727a-44be-be01-10b6d1d47690")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8347090e-41dd-4ad6-a268-54cca5b5608c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom dnp)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "4e54dbdc-29c1-4fd4-ac46-34367b16111e")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d86608cb-e6ae-4838-a492-31025ae63e15")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "2ae6834e-e3d7-45ef-aad4-3eb379073759")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "b683fb4b-38da-429c-88eb-f24a567367be")
 		)
 		(embedded_fonts no)
 	)
@@ -3706,17 +3904,6 @@
 		(layer "Edge.Cuts")
 		(uuid "60c6dfe0-f2aa-409a-93b2-fb8359f0cba8")
 	)
-	(gr_circle
-		(center 196.088 138.938)
-		(end 197.612 140.462)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "6293de54-409b-4b0d-8285-36814c8a8fe3")
-	)
 	(gr_line
 		(start 199.898 140.716)
 		(end 199.898 114.808)
@@ -3746,17 +3933,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "9ec2736b-ded7-4c02-a529-06b1e9909f65")
-	)
-	(gr_circle
-		(center 104.14 139.192)
-		(end 105.41 140.97)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "9f378f89-5894-44a5-aaf0-727926090e70")
 	)
 	(gr_line
 		(start 194.31 142.494)
@@ -18530,11 +18706,29 @@
 			"eGdFVUFZcmxaNlowSjBlelVueTVISDFxV0xTb09obE5jMnQxY08zIgoielR1Qjlhc0pjejUvMXo4"
 			"ZjdSb0E2RzMwKzNnbVZzTkw2RHRXelBmMjloQUNRcG1BK1ZCMnJpMG5uUDhBeTFrSVBxeHFRRnMv"
 			"Tno5YSIKIkJNc1hOeEpkWERTeW5MTjI5S1lxbDIycnl4NHBFQmNnS09UWFJhYlpMYVFlYSszekQx"
-			"UHBRQmtMcFQ3QQ=="
+			"UHBRQmtMcFQ3Qd1SAwEAAADw0JNoAQAAAPB3CVgBAAAA0B5ZAwEAAADwdwlYAQAAAPB3CVgBAAAA"
+			"INGTaAEAAADwdwlYAQAAABAeWQMBAAAAUNGTaAEAAADwgUwDAQAAAICaWQMBAAAAQJtZAwEAAABQ"
+			"zVEDAQAAAPB3CVgBAAAA8HcJWAEAAADwdwlYAQAAAPCBTAMBAAAA8HcJWAEAAACA0ZNoAQAAAPB3"
+			"CVgBAAAA0B5ZAwEAAADwdwlYAQAAAPB3CVgBAAAAsNGTaAEAAACw41ADAQAAABAeWQMBAAAA4NGT"
+			"aAEAAACwdp9oAQAAAICaWQMBAAAAENKTaAEAAADwdwlYAQAAAECbWQMBAAAA8HcJWAEAAADwdwlY"
+			"AQAAAPB3CVgBAAAAUM1RAwEAAACw41ADAQAAALDjUAMBAAAAsONQAwEAAACwdp9oAQAAAPB3CVgB"
+			"AAAAsONQAwEAAABA0pNoAQAAAPB3CVgBAAAA0B5ZAwEAAADwdwlYAQAAAPB3CVgBAAAAcNKTaAEA"
+			"AACw41ADAQAAABAeWQMBAAAAoNKTaAEAAADwc59oAQAAAICaWQMBAAAA0NKTaAEAAAAwCU8DAQAA"
+			"ANAeWQMBAAAAMAlPAwEAAAAwCU8DAQAAADAJTwMBAAAAMAlPAwEAAAAA05NoAQAAAPB3CVgBAAAA"
+			"QJtZAwEAAADwdwlYAQAAADAJTwMBAAAAUM1RAwEAAACw41ADAQAAALDjUAMBAAAAsONQAwEAAADw"
+			"c59oAQAAADAJTwMBAAAAsONQAwEAAAAw05NoAQAAAPB3CVgBAAAA0B5ZAwEAAADwdwlYAQAAAPB3"
+			"CVgBAAAAYNOTaAEAAADwdwlYAQAAABAeWQMBAAAAkNOTaAEAAABw/0sDAQAAAICaWQMBAAAAwNOT"
+			"aAEAAACwOFYDAQAAABAeWQMBAAAAsDhWAwEAAADw05NoAQAAALB9swMBAAAA0AJaAwEAAACwOFYD"
+			"AQAAACDUk2gBAAAAsHYJWAEAAADgmlkDAQAAALB2CVgBAAAAsDhWAwEAAABQ1JNoAQAAAECbWQMB"
+			"AAAAsPxUAwEAAABQzVEDAQAAAPB3CVgBAAAA8HcJWAEAAADwdwlYAQAAAHD/SwMBAAAAsDhWAwEA"
+			"AADwdwlYAQAAAIDUk2gBAAAA8HcJWAEAAADQHlkDAQAAAPB3CVgBAAAA8HcJWAEAAACw1JNoAQAA"
+			"APB3CVgBAAAAEB5ZAwEAAADg1JNoAQAAAHD/SwMBAAAAgJpZAwEAAAAQ1ZNoAQAAALA4VgMBAAAA"
+			"EB5ZAwEAAACwOFYDAQAAAEDVk2gBAAAAsH2zAwEAAADgmlkDAQAAALA4VgMBAAAAsDhWAwEAAABw"
+			"1ZNoAQAAAECbWQ=="
 		)
 		(uuid "9a3153b5-abd9-4ad2-9e62-ad4d046153e3")
 	)
-	(gr_text "Sord M5 Prototyping/ROM board\nleadedsolder.com v1 2025"
+	(gr_text "Sord M5 Prototyping/ROM board\nleadedsolder.com v2 2025"
 		(at 106.934 140.97 0)
 		(layer "F.SilkS")
 		(uuid "71916d60-1450-4c7b-9ff8-4906aba63c6c")
@@ -20985,7 +21179,7 @@
 				(xy 175.895 141.498132) (xy 175.914685 141.431093) (xy 175.915855 141.429305) (xy 175.969394 141.349179)
 				(xy 176.029737 141.203497) (xy 176.0605 141.048842) (xy 176.0605 140.891158) (xy 176.0605 140.891155)
 				(xy 176.060499 140.891153) (xy 176.038765 140.781892) (xy 176.029737 140.736503) (xy 175.969394 140.590821)
-				(xy 175.967282 140.58766) (xy 175.915898 140.510757) (xy 175.89502 140.44408) (xy 175.895 140.441867)
+				(xy 175.96635 140.586265) (xy 175.915898 140.510757) (xy 175.89502 140.44408) (xy 175.895 140.441867)
 				(xy 175.895 136.649) (xy 175.914685 136.581961) (xy 175.967489 136.536206) (xy 176.019 136.525)
 				(xy 188.595 136.525) (xy 191.755771 133.364229) (xy 191.787998 133.341001) (xy 193.013818 132.728091)
 				(xy 193.069272 132.715) (xy 194.31 132.715) (xy 194.31 95.25) (xy 101.2085 95.25) (xy 101.141461 95.230315)
