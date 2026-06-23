@@ -74,7 +74,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "m5-romcart-mini-v1")
+			(outputdirectory "m5-romcart-mini-v2")
 		)
 	)
 	(net 0 "")
