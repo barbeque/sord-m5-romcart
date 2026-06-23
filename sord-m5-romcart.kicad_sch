@@ -974,6 +974,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -3467,9 +3574,9 @@
 		)
 		(uuid "1de20904-7d4c-43a3-bbb3-7c5924ebe82c")
 	)
-	(text "0x2000 (A13)"
+	(text "0x2000-0x3fff (A13)"
 		(exclude_from_sim no)
-		(at 116.205 67.31 0)
+		(at 116.205 70.485 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3477,17 +3584,6 @@
 			(justify left)
 		)
 		(uuid "260edff9-6fee-4ec9-bf03-518bd5567ad0")
-	)
-	(text "0x6000 (A13 + A14, \"only 4k\")"
-		(exclude_from_sim no)
-		(at 116.205 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "279151ab-47c7-40c6-9db3-5e2d4344446a")
 	)
 	(text "0x2000"
 		(exclude_from_sim no)
@@ -3509,7 +3605,7 @@
 		)
 		(uuid "4105b264-62da-4054-b736-ba5a478c091c")
 	)
-	(text "~{Select} = ~{ROM0} and ~{ROM1}\nROM_A13 = invert ~{ROM1}"
+	(text "~{Select} = ~{ROM1} and ~{ROM2}\nROM_A13 = invert ~{ROM2}"
 		(exclude_from_sim no)
 		(at 14.605 98.425 0)
 		(effects
@@ -3520,16 +3616,27 @@
 		)
 		(uuid "45451e83-94b6-433e-8597-7f1140cab26a")
 	)
-	(text "0x4000 (A14)"
+	(text "0x4000-0x5fff (A14)"
 		(exclude_from_sim no)
-		(at 116.205 69.85 0)
+		(at 116.205 73.025 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "87ae4e9d-e7ef-4d59-afcb-be8a20f14d8a")
+		(uuid "728bb654-168d-4963-9173-1d4f5c4404a3")
+	)
+	(text "Unknown (maybe 0x6000+?)"
+		(exclude_from_sim no)
+		(at 116.205 67.945 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be976a83-5c30-4512-a1da-bafe9640fdfc")
 	)
 	(text "BASIC-{F,G,I,W}?"
 		(exclude_from_sim no)
@@ -3550,6 +3657,17 @@
 			)
 		)
 		(uuid "d0998e11-6901-4961-a76e-3d0481b314f7")
+	)
+	(text "External RAM"
+		(exclude_from_sim no)
+		(at 116.205 75.565 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e4b967e1-35ff-47d8-a3b7-abc9240fa020")
 	)
 	(text "0x4000"
 		(exclude_from_sim no)
@@ -3745,6 +3863,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 186.69) (xy 86.995 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a2f6573-d9d3-4ed9-8121-5cd2f9f4302a")
+	)
+	(wire
+		(pts
 			(xy 146.685 84.455) (xy 156.21 84.455)
 		)
 		(stroke
@@ -3905,6 +4033,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 176.53) (xy 83.185 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2959fad9-f27e-4f3e-9623-1dda0a479ec4")
+	)
+	(wire
+		(pts
 			(xy 184.15 92.075) (xy 176.53 92.075)
 		)
 		(stroke
@@ -4022,6 +4160,16 @@
 			(type default)
 		)
 		(uuid "3a958654-5b69-45c0-ab8a-3b5b53751ef5")
+	)
+	(wire
+		(pts
+			(xy 76.2 171.45) (xy 81.28 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c70f320-41f4-452b-9e33-bae8c06e8f34")
 	)
 	(wire
 		(pts
@@ -4475,6 +4623,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 181.61) (xy 85.09 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc70ac8a-f45c-4a03-ab54-4feab278867a")
+	)
+	(wire
+		(pts
 			(xy 71.755 85.725) (xy 80.645 85.725)
 		)
 		(stroke
@@ -4665,6 +4823,16 @@
 	)
 	(wire
 		(pts
+			(xy 103.505 75.565) (xy 107.95 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaee16cd-1791-4bad-a201-6b6af2434868")
+	)
+	(wire
+		(pts
 			(xy 146.685 92.075) (xy 156.21 92.075)
 		)
 		(stroke
@@ -4793,7 +4961,7 @@
 		)
 		(uuid "0fcbfc98-feee-4d06-a44c-a41a2a8a1c86")
 	)
-	(label "~{ROM1}"
+	(label "~{ROM2}"
 		(at 20.32 74.295 180)
 		(effects
 			(font
@@ -4833,6 +5001,16 @@
 		)
 		(uuid "1aa053f2-988d-4739-ac16-3a40221fa0fb")
 	)
+	(label "~{EXM}"
+		(at 107.95 75.565 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2172deab-8e6c-4be9-bc9a-d49107071d47")
+	)
 	(label "D6"
 		(at 71.755 78.105 180)
 		(effects
@@ -4863,7 +5041,7 @@
 		)
 		(uuid "2955ba1b-3606-42a5-b4d5-33cc41c371cf")
 	)
-	(label "~{ROM0}"
+	(label "~{ROM1}"
 		(at 20.32 69.215 180)
 		(effects
 			(font
@@ -4892,6 +5070,16 @@
 			(justify right bottom)
 		)
 		(uuid "3b0a09dc-bd0c-441a-86cc-e53006004ce2")
+	)
+	(label "~{ROM0}"
+		(at 76.2 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f3db254-0d2a-40e6-9e8b-42285873cb79")
 	)
 	(label "~{ROM1}"
 		(at 107.95 70.485 0)
@@ -4923,7 +5111,17 @@
 		)
 		(uuid "4b83d085-7a1d-45a7-aa76-fcbb9c9c334f")
 	)
-	(label "~{ROM1}"
+	(label "~{ROM2}"
+		(at 76.2 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57105e13-a2d7-4610-982c-5b202a5b13d4")
+	)
+	(label "~{ROM2}"
 		(at 20.32 83.82 180)
 		(effects
 			(font
@@ -4982,6 +5180,16 @@
 			(justify right bottom)
 		)
 		(uuid "76b8d9b4-8a5a-4af2-bf56-1c7bdd7ecde5")
+	)
+	(label "~{ROM1}"
+		(at 76.2 176.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78c089c8-a4bb-4ac6-9760-f7e9fe03f598")
 	)
 	(label "A7"
 		(at 146.685 102.235 180)
@@ -5153,7 +5361,7 @@
 		)
 		(uuid "b3dd251f-5010-40fe-845e-922f65bc60b2")
 	)
-	(label "~{ROM1}"
+	(label "~{ROM2}"
 		(at 20.32 88.9 180)
 		(effects
 			(font
@@ -5233,6 +5441,16 @@
 		)
 		(uuid "d0ae6e8b-e2b9-46b2-808d-14a39ded6917")
 	)
+	(label "~{EXM}"
+		(at 76.2 186.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d5a3c458-823b-40bb-bc45-9460b1edfb88")
+	)
 	(label "A4"
 		(at 71.755 95.885 180)
 		(effects
@@ -5302,6 +5520,73 @@
 			(justify right bottom)
 		)
 		(uuid "ffb0d591-e935-4493-be96-a012b3bebaf9")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 85.09 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06210108-79ad-4853-b883-cc75b91b7dc9")
+		(property "Reference" "TP3"
+			(at 87.63 177.0379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 87.63 179.5779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 90.17 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ed6866e-3730-4317-9f74-4f5826661e05")
+		)
+		(instances
+			(project "sord-m5-romcart"
+				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "74xx:74LS00")
@@ -5543,6 +5828,73 @@
 			(project ""
 				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.995 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d0b8481-677d-4dfb-b6cd-fbd69bd20385")
+		(property "Reference" "TP4"
+			(at 89.535 182.1179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 89.535 184.6579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 92.075 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.075 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.995 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a593444-1b74-4844-bbe6-dc1fc4bd999d")
+		)
+		(instances
+			(project "sord-m5-romcart"
+				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -5971,6 +6323,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 81.28 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e1d78eb-8ee3-4fd9-b949-57889fc5d92b")
+		(property "Reference" "TP1"
+			(at 83.82 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 169.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 86.36 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60351c6e-011d-4b07-af1a-a84cb7e0fd0c")
+		)
+		(instances
+			(project ""
+				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS00")
 		(at 52.07 174.625 0)
 		(unit 4)
@@ -6325,6 +6744,73 @@
 			(project "sord-m5-romcart"
 				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.185 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0959b5d-9eb6-4c29-bc7a-638829daa1f2")
+		(property "Reference" "TP2"
+			(at 85.725 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 85.725 174.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 88.265 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.265 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 83.185 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ab84fc6-032f-40c4-9376-25f88a48a042")
+		)
+		(instances
+			(project "sord-m5-romcart"
+				(path "/50e7772e-e5ec-4883-b476-ede068f70169"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
